@@ -1,0 +1,5 @@
+include(msvc)
+
+[settings]
+build_type=Release
+#compiler.libcxx=libstdc++11

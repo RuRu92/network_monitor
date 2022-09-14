@@ -1,0 +1,33 @@
+NETWORK MONITOR
+======================
+
+1. Setup
+--- CONNAN ---
+----------------------
+Run conna commnand from build folder. Member to use " --build missing "
+$ conan install .. --profile ../conanprofile.toml
+
+--- CMAKE ---
+----------------------
+
+Running CMAKE will link the boost libraries and other dependencies using conan generated CmakeFiles 
+$ cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release
+
+- BUILD TYPES
+$ RelWithDebInfo
+$ Debug
+$ Release
+
+--- NINJA ---
+----------------------
+Run ninja to simply build a exe or some executable. This can be used to detect bugs during compilation
+$ ninja
+
+
+================================================================
+CONAN
+================================================================
+- install conan using pip
+1.  pip install conan
+- update conan using
+2.  pip install conan --upgrade
