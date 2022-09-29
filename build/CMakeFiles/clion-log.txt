@@ -1,14 +1,14 @@
-"C:\Program Files\JetBrains\CLion 2022.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=RelWithDebInfo "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.1.1/bin/ninja/win/ninja.exe" cd build -G Ninja -S F:\workspace\c++\clion\network_monitor -B F:\workspace\c++\clion\network_monitor\build
--- The C compiler identification is MSVC 19.32.31332.0
--- The CXX compiler identification is MSVC 19.32.31332.0
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/ruslanjonusas/workspace/network_monitor -B /Users/ruslanjonusas/workspace/network_monitor/build
+-- The C compiler identification is AppleClang 13.1.6.13160021
+-- The CXX compiler identification is AppleClang 13.1.6.13160021
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.32.31326/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 EXISTS
@@ -16,170 +16,184 @@ EXISTS
 -- Found Boost: 1.79.0 (found suitable version "1.79.0", minimum required is "1.79.0") 
 -- Conan: Component 'system' found in package 'Boost'
 -- Conan: Component 'unit_test_framework' found in package 'Boost'
--- Library libboost_contract found C:/.conan/4dfee2/1/lib/libboost_contract.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_contract.lib
--- Library libboost_coroutine found C:/.conan/4dfee2/1/lib/libboost_coroutine.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_coroutine.lib
--- Library libboost_fiber_numa found C:/.conan/4dfee2/1/lib/libboost_fiber_numa.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_fiber_numa.lib
--- Library libboost_fiber found C:/.conan/4dfee2/1/lib/libboost_fiber.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_fiber.lib
--- Library libboost_context found C:/.conan/4dfee2/1/lib/libboost_context.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_context.lib
--- Library libboost_graph found C:/.conan/4dfee2/1/lib/libboost_graph.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_graph.lib
--- Library libboost_iostreams found C:/.conan/4dfee2/1/lib/libboost_iostreams.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_iostreams.lib
--- Library libboost_json found C:/.conan/4dfee2/1/lib/libboost_json.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_json.lib
--- Library libboost_locale found C:/.conan/4dfee2/1/lib/libboost_locale.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_locale.lib
--- Library libboost_log_setup found C:/.conan/4dfee2/1/lib/libboost_log_setup.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_log_setup.lib
--- Library libboost_log found C:/.conan/4dfee2/1/lib/libboost_log.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_log.lib
--- Library libboost_math_c99 found C:/.conan/4dfee2/1/lib/libboost_math_c99.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99.lib
--- Library libboost_math_c99f found C:/.conan/4dfee2/1/lib/libboost_math_c99f.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99f.lib
--- Library libboost_math_c99l found C:/.conan/4dfee2/1/lib/libboost_math_c99l.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99l.lib
--- Library libboost_math_tr1 found C:/.conan/4dfee2/1/lib/libboost_math_tr1.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1.lib
--- Library libboost_math_tr1f found C:/.conan/4dfee2/1/lib/libboost_math_tr1f.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1f.lib
--- Library libboost_math_tr1l found C:/.conan/4dfee2/1/lib/libboost_math_tr1l.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1l.lib
--- Library libboost_nowide found C:/.conan/4dfee2/1/lib/libboost_nowide.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_nowide.lib
--- Library libboost_program_options found C:/.conan/4dfee2/1/lib/libboost_program_options.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_program_options.lib
--- Library libboost_random found C:/.conan/4dfee2/1/lib/libboost_random.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_random.lib
--- Library libboost_regex found C:/.conan/4dfee2/1/lib/libboost_regex.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_regex.lib
--- Library libboost_stacktrace_noop found C:/.conan/4dfee2/1/lib/libboost_stacktrace_noop.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_noop.lib
--- Library libboost_stacktrace_windbg found C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg.lib
--- Library libboost_stacktrace_windbg_cached found C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg_cached.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg_cached.lib
--- Library libboost_timer found C:/.conan/4dfee2/1/lib/libboost_timer.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_timer.lib
--- Library libboost_type_erasure found C:/.conan/4dfee2/1/lib/libboost_type_erasure.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_type_erasure.lib
--- Library libboost_thread found C:/.conan/4dfee2/1/lib/libboost_thread.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_thread.lib
--- Library libboost_chrono found C:/.conan/4dfee2/1/lib/libboost_chrono.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_chrono.lib
--- Library libboost_container found C:/.conan/4dfee2/1/lib/libboost_container.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_container.lib
--- Library libboost_date_time found C:/.conan/4dfee2/1/lib/libboost_date_time.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_date_time.lib
--- Library libboost_unit_test_framework found C:/.conan/4dfee2/1/lib/libboost_unit_test_framework.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_unit_test_framework.lib
--- Library libboost_prg_exec_monitor found C:/.conan/4dfee2/1/lib/libboost_prg_exec_monitor.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_prg_exec_monitor.lib
--- Library libboost_test_exec_monitor found C:/.conan/4dfee2/1/lib/libboost_test_exec_monitor.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_test_exec_monitor.lib
--- Library libboost_exception found C:/.conan/4dfee2/1/lib/libboost_exception.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_exception.lib
--- Library libboost_wave found C:/.conan/4dfee2/1/lib/libboost_wave.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_wave.lib
--- Library libboost_filesystem found C:/.conan/4dfee2/1/lib/libboost_filesystem.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_filesystem.lib
--- Library libboost_atomic found C:/.conan/4dfee2/1/lib/libboost_atomic.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_atomic.lib
--- Library libboost_wserialization found C:/.conan/4dfee2/1/lib/libboost_wserialization.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_wserialization.lib
--- Library libboost_serialization found C:/.conan/4dfee2/1/lib/libboost_serialization.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_serialization.lib
+-- Library boost_contract found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_contract.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_contract.a
+-- Library boost_coroutine found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_coroutine.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_coroutine.a
+-- Library boost_fiber_numa found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber_numa.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber_numa.a
+-- Library boost_fiber found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber.a
+-- Library boost_context found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_context.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_context.a
+-- Library boost_graph found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_graph.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_graph.a
+-- Library boost_iostreams found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_iostreams.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_iostreams.a
+-- Library boost_json found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_json.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_json.a
+-- Library boost_locale found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_locale.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_locale.a
+-- Library boost_log_setup found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log_setup.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log_setup.a
+-- Library boost_log found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log.a
+-- Library boost_math_c99 found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99.a
+-- Library boost_math_c99f found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99f.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99f.a
+-- Library boost_math_c99l found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99l.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99l.a
+-- Library boost_math_tr1 found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1.a
+-- Library boost_math_tr1f found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1f.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1f.a
+-- Library boost_math_tr1l found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1l.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1l.a
+-- Library boost_nowide found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_nowide.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_nowide.a
+-- Library boost_program_options found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_program_options.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_program_options.a
+-- Library boost_random found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_random.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_random.a
+-- Library boost_regex found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_regex.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_regex.a
+-- Library boost_stacktrace_addr2line found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_addr2line.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_addr2line.a
+-- Library boost_stacktrace_backtrace found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_backtrace.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_backtrace.a
+-- Library boost_stacktrace_basic found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_basic.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_basic.a
+-- Library boost_stacktrace_noop found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_noop.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_noop.a
+-- Library boost_timer found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_timer.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_timer.a
+-- Library boost_type_erasure found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_type_erasure.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_type_erasure.a
+-- Library boost_thread found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_thread.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_thread.a
+-- Library boost_chrono found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_chrono.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_chrono.a
+-- Library boost_container found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_container.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_container.a
+-- Library boost_date_time found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_date_time.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_date_time.a
+-- Library boost_unit_test_framework found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_unit_test_framework.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_unit_test_framework.a
+-- Library boost_prg_exec_monitor found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_prg_exec_monitor.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_prg_exec_monitor.a
+-- Library boost_test_exec_monitor found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_test_exec_monitor.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_test_exec_monitor.a
+-- Library boost_exception found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_exception.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_exception.a
+-- Library boost_wave found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wave.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wave.a
+-- Library boost_filesystem found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_filesystem.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_filesystem.a
+-- Library boost_atomic found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_atomic.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_atomic.a
+-- Library boost_wserialization found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wserialization.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wserialization.a
+-- Library boost_serialization found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_serialization.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_serialization.a
 -- Conan: Using autogenerated FindBZip2.cmake
 -- Found BZip2: 1.0.8 (found version "1.0.8") 
--- Library bz2 found C:/Users/Ruslan/.conan/data/bzip2/1.0.8/_/_/package/53b5fd22ba061620078deefdae9a437c5f693201/lib/bz2.lib
--- Found: C:/Users/Ruslan/.conan/data/bzip2/1.0.8/_/_/package/53b5fd22ba061620078deefdae9a437c5f693201/lib/bz2.lib
+-- Library bz2 found /Users/ruslanjonusas/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/lib/libbz2.a
+-- Found: /Users/ruslanjonusas/.conan/data/bzip2/1.0.8/_/_/package/2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589/lib/libbz2.a
 -- Conan: Using autogenerated FindZLIB.cmake
 -- Found ZLIB: 1.2.12 (found version "1.2.12") 
--- Library zlib found C:/Users/Ruslan/.conan/data/zlib/1.2.12/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/zlib.lib
--- Found: C:/Users/Ruslan/.conan/data/zlib/1.2.12/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/zlib.lib
--- Library libboost_serialization found C:/.conan/4dfee2/1/lib/libboost_serialization.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_serialization.lib
--- Library libboost_wserialization found C:/.conan/4dfee2/1/lib/libboost_wserialization.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_wserialization.lib
--- Library libboost_atomic found C:/.conan/4dfee2/1/lib/libboost_atomic.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_atomic.lib
--- Library libboost_filesystem found C:/.conan/4dfee2/1/lib/libboost_filesystem.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_filesystem.lib
--- Library libboost_wave found C:/.conan/4dfee2/1/lib/libboost_wave.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_wave.lib
--- Library libboost_exception found C:/.conan/4dfee2/1/lib/libboost_exception.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_exception.lib
--- Library libboost_test_exec_monitor found C:/.conan/4dfee2/1/lib/libboost_test_exec_monitor.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_test_exec_monitor.lib
--- Library libboost_prg_exec_monitor found C:/.conan/4dfee2/1/lib/libboost_prg_exec_monitor.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_prg_exec_monitor.lib
--- Library libboost_unit_test_framework found C:/.conan/4dfee2/1/lib/libboost_unit_test_framework.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_unit_test_framework.lib
--- Library libboost_date_time found C:/.conan/4dfee2/1/lib/libboost_date_time.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_date_time.lib
--- Library libboost_container found C:/.conan/4dfee2/1/lib/libboost_container.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_container.lib
--- Library libboost_chrono found C:/.conan/4dfee2/1/lib/libboost_chrono.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_chrono.lib
--- Library libboost_thread found C:/.conan/4dfee2/1/lib/libboost_thread.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_thread.lib
--- Library libboost_type_erasure found C:/.conan/4dfee2/1/lib/libboost_type_erasure.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_type_erasure.lib
--- Library libboost_timer found C:/.conan/4dfee2/1/lib/libboost_timer.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_timer.lib
--- Library libboost_stacktrace_windbg_cached found C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg_cached.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg_cached.lib
--- Library libboost_stacktrace_windbg found C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_windbg.lib
--- Library libboost_stacktrace_noop found C:/.conan/4dfee2/1/lib/libboost_stacktrace_noop.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_stacktrace_noop.lib
--- Library libboost_regex found C:/.conan/4dfee2/1/lib/libboost_regex.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_regex.lib
--- Library libboost_random found C:/.conan/4dfee2/1/lib/libboost_random.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_random.lib
--- Library libboost_program_options found C:/.conan/4dfee2/1/lib/libboost_program_options.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_program_options.lib
--- Library libboost_nowide found C:/.conan/4dfee2/1/lib/libboost_nowide.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_nowide.lib
--- Library libboost_math_tr1l found C:/.conan/4dfee2/1/lib/libboost_math_tr1l.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1l.lib
--- Library libboost_math_tr1f found C:/.conan/4dfee2/1/lib/libboost_math_tr1f.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1f.lib
--- Library libboost_math_tr1 found C:/.conan/4dfee2/1/lib/libboost_math_tr1.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_tr1.lib
--- Library libboost_math_c99l found C:/.conan/4dfee2/1/lib/libboost_math_c99l.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99l.lib
--- Library libboost_math_c99f found C:/.conan/4dfee2/1/lib/libboost_math_c99f.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99f.lib
--- Library libboost_math_c99 found C:/.conan/4dfee2/1/lib/libboost_math_c99.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_math_c99.lib
--- Library libboost_log found C:/.conan/4dfee2/1/lib/libboost_log.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_log.lib
--- Library libboost_log_setup found C:/.conan/4dfee2/1/lib/libboost_log_setup.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_log_setup.lib
--- Library libboost_locale found C:/.conan/4dfee2/1/lib/libboost_locale.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_locale.lib
--- Library libboost_json found C:/.conan/4dfee2/1/lib/libboost_json.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_json.lib
--- Library libboost_iostreams found C:/.conan/4dfee2/1/lib/libboost_iostreams.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_iostreams.lib
--- Library libboost_graph found C:/.conan/4dfee2/1/lib/libboost_graph.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_graph.lib
--- Library libboost_context found C:/.conan/4dfee2/1/lib/libboost_context.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_context.lib
--- Library libboost_fiber found C:/.conan/4dfee2/1/lib/libboost_fiber.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_fiber.lib
--- Library libboost_fiber_numa found C:/.conan/4dfee2/1/lib/libboost_fiber_numa.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_fiber_numa.lib
--- Library libboost_coroutine found C:/.conan/4dfee2/1/lib/libboost_coroutine.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_coroutine.lib
--- Library libboost_contract found C:/.conan/4dfee2/1/lib/libboost_contract.lib
--- Found: C:/.conan/4dfee2/1/lib/libboost_contract.lib
+-- Library z found /Users/ruslanjonusas/.conan/data/zlib/1.2.12/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libz.a
+-- Found: /Users/ruslanjonusas/.conan/data/zlib/1.2.12/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libz.a
+-- Conan: Using autogenerated FindIconv.cmake
+-- Found Iconv: 1.17 (found version "1.17") 
+-- Library iconv found /Users/ruslanjonusas/.conan/data/libiconv/1.17/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libiconv.a
+-- Found: /Users/ruslanjonusas/.conan/data/libiconv/1.17/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libiconv.a
+-- Library charset found /Users/ruslanjonusas/.conan/data/libiconv/1.17/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcharset.a
+-- Found: /Users/ruslanjonusas/.conan/data/libiconv/1.17/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcharset.a
+-- Conan: Using autogenerated Findlibbacktrace.cmake
+-- Found libbacktrace: cci.20210118 (found version "cci.20210118") 
+-- Library backtrace found /Users/ruslanjonusas/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libbacktrace.a
+-- Found: /Users/ruslanjonusas/.conan/data/libbacktrace/cci.20210118/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libbacktrace.a
+-- Library boost_serialization found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_serialization.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_serialization.a
+-- Library boost_wserialization found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wserialization.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wserialization.a
+-- Library boost_atomic found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_atomic.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_atomic.a
+-- Library boost_filesystem found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_filesystem.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_filesystem.a
+-- Library boost_wave found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wave.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_wave.a
+-- Library boost_exception found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_exception.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_exception.a
+-- Library boost_test_exec_monitor found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_test_exec_monitor.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_test_exec_monitor.a
+-- Library boost_prg_exec_monitor found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_prg_exec_monitor.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_prg_exec_monitor.a
+-- Library boost_unit_test_framework found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_unit_test_framework.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_unit_test_framework.a
+-- Library boost_date_time found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_date_time.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_date_time.a
+-- Library boost_container found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_container.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_container.a
+-- Library boost_chrono found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_chrono.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_chrono.a
+-- Library boost_thread found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_thread.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_thread.a
+-- Library boost_type_erasure found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_type_erasure.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_type_erasure.a
+-- Library boost_timer found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_timer.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_timer.a
+-- Library boost_stacktrace_noop found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_noop.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_noop.a
+-- Library boost_stacktrace_basic found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_basic.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_basic.a
+-- Library boost_stacktrace_backtrace found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_backtrace.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_backtrace.a
+-- Library boost_stacktrace_addr2line found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_addr2line.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_stacktrace_addr2line.a
+-- Library boost_regex found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_regex.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_regex.a
+-- Library boost_random found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_random.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_random.a
+-- Library boost_program_options found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_program_options.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_program_options.a
+-- Library boost_nowide found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_nowide.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_nowide.a
+-- Library boost_math_tr1l found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1l.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1l.a
+-- Library boost_math_tr1f found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1f.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1f.a
+-- Library boost_math_tr1 found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_tr1.a
+-- Library boost_math_c99l found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99l.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99l.a
+-- Library boost_math_c99f found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99f.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99f.a
+-- Library boost_math_c99 found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_math_c99.a
+-- Library boost_log found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log.a
+-- Library boost_log_setup found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log_setup.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_log_setup.a
+-- Library boost_locale found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_locale.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_locale.a
+-- Library boost_json found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_json.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_json.a
+-- Library boost_iostreams found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_iostreams.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_iostreams.a
+-- Library boost_graph found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_graph.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_graph.a
+-- Library boost_context found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_context.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_context.a
+-- Library boost_fiber found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber.a
+-- Library boost_fiber_numa found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber_numa.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_fiber_numa.a
+-- Library boost_coroutine found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_coroutine.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_coroutine.a
+-- Library boost_contract found /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_contract.a
+-- Found: /Users/ruslanjonusas/.conan/data/boost/1.79.0/_/_/package/f176d793a4209b0ad6faa2430140a1edfe7c4446/lib/libboost_contract.a
 -- Looking for C++ include filesystem
 -- Looking for C++ include filesystem - found
 -- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
@@ -188,18 +202,16 @@ EXISTS
 -- Found nlohmann_json: 3.11.2 (found version "3.11.2") 
 -- Conan: Using autogenerated FindOpenSSL.cmake
 -- Found OpenSSL: 1.1.1h (found version "1.1.1h") 
--- Library libssl found C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libssl.lib
--- Found: C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libssl.lib
--- Library libcrypto found C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libcrypto.lib
--- Found: C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libcrypto.lib
--- Library libcrypto found C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libcrypto.lib
--- Found: C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libcrypto.lib
--- Library libssl found C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libssl.lib
--- Found: C:/Users/Ruslan/.conan/data/openssl/1.1.1h/_/_/package/5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b/lib/libssl.lib
-IS WIN32
-0x0A00
+-- Library ssl found /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libssl.a
+-- Found: /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libssl.a
+-- Library crypto found /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcrypto.a
+-- Found: /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcrypto.a
+-- Library crypto found /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcrypto.a
+-- Found: /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libcrypto.a
+-- Library ssl found /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libssl.a
+-- Found: /Users/ruslanjonusas/.conan/data/openssl/1.1.1h/_/_/package/095512ed878f14a09dd732e9f6868729dd437529/lib/libssl.a
 cert path...
-F:/workspace/c++/clion/network_monitor/test/cacert.pem
+/Users/ruslanjonusas/workspace/network_monitor/test/cacert.pem
 -- Configuring done
 -- Generating done
--- Build files have been written to: F:/workspace/c++/clion/network_monitor/build
+-- Build files have been written to: /Users/ruslanjonusas/workspace/network_monitor/build

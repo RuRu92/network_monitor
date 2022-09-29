@@ -38,16 +38,16 @@ set(LIB_SOURCES
         "${CMAKE_CURRENT_SOURCE_DIR}/src/websocket-client.cpp"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/http-client.cpp"
         "inc/network-monitor/file_downloader.hpp"
-        )
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/transport_network.cpp")
 add_library(network_monitor STATIC ${LIB_SOURCES})
 
 #add_executable(network_monitor ${SOURCES})
 target_compile_features(network_monitor
     PUBLIC
-        cxx_std_14
+        cxx_std_17
 )
 
-message(${WINDOWS_VERSION})
+#message(${WINDOWS_VERSION})
 target_compile_definitions(network_monitor
         PRIVATE
         $<$<PLATFORM_ID:Windows>:_WIN32_WINNT=${WINDOWS_VERSION}>
@@ -92,8 +92,8 @@ target_link_libraries(network_monitor
 set(TESTS_SOURCES
         "${CMAKE_CURRENT_SOURCE_DIR}/test/main.cpp"
         "${CMAKE_CURRENT_SOURCE_DIR}/test/websocket-client.cpp"
-        "${CMAKE_CURRENT_SOURCE_DIR}/test/http-client.cpp"
-)
+        "${CMAKE_CURRENT_SOURCE_DIR}/test/http-client.cpp" test/transport_network.cpp)
+#        src/transport_network.cpp inc/network-monitor/transport_network.h)
 
 add_executable(network-monitor-tests ${TESTS_SOURCES})
 target_compile_features(network-monitor-tests

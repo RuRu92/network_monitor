@@ -80,9 +80,9 @@ find_package_handle_standard_args(nlohmann_json REQUIRED_VARS
 mark_as_advanced(nlohmann_json_FOUND nlohmann_json_VERSION)
 
 
-set(nlohmann_json_INCLUDE_DIRS "C:/Users/Ruslan/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
-set(nlohmann_json_INCLUDE_DIR "C:/Users/Ruslan/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
-set(nlohmann_json_INCLUDES "C:/Users/Ruslan/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
+set(nlohmann_json_INCLUDE_DIRS "/Users/ruslanjonusas/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
+set(nlohmann_json_INCLUDE_DIR "/Users/ruslanjonusas/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
+set(nlohmann_json_INCLUDES "/Users/ruslanjonusas/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include")
 set(nlohmann_json_RES_DIRS )
 set(nlohmann_json_DEFINITIONS )
 set(nlohmann_json_LINKER_FLAGS_LIST
@@ -147,8 +147,8 @@ endforeach()
 set(nlohmann_json_LIBRARIES_TARGETS "${nlohmann_json_LIBRARIES_TARGETS};")
 set(nlohmann_json_LIBRARIES "${nlohmann_json_LIBRARIES};")
 
-set(CMAKE_MODULE_PATH "C:/Users/Ruslan/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CMAKE_MODULE_PATH})
-set(CMAKE_PREFIX_PATH "C:/Users/Ruslan/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CMAKE_PREFIX_PATH})
+set(CMAKE_MODULE_PATH "/Users/ruslanjonusas/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CMAKE_MODULE_PATH})
+set(CMAKE_PREFIX_PATH "/Users/ruslanjonusas/.conan/data/nlohmann_json/3.11.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/" ${CMAKE_PREFIX_PATH})
 
 if(NOT ${CMAKE_VERSION} VERSION_LESS "3.0")
     # Target approach

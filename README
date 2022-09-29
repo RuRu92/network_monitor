@@ -11,7 +11,7 @@ $ conan install .. --profile ../conanprofile.toml
 ----------------------
 
 Running CMAKE will link the boost libraries and other dependencies using conan generated CmakeFiles 
-$ cmake .. -GNinja -DCMAKE_BUILD_TYPE=Release
+$ cmake .. -GNinja -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 - BUILD TYPES
 $ RelWithDebInfo

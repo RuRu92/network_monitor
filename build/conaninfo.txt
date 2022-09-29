@@ -13,13 +13,16 @@
 
 
 [full_requires]
-    boost/1.79.0:9122dbc53b72d49447592b7c1471ee184105ccbd
-    bzip2/1.0.8:53b5fd22ba061620078deefdae9a437c5f693201
+    boost/1.79.0:f176d793a4209b0ad6faa2430140a1edfe7c4446
+    bzip2/1.0.8:2b8e4ed96946ad0a4cd2c6e1e01636aa2a421589
+    libbacktrace/cci.20210118:095512ed878f14a09dd732e9f6868729dd437529
+    libiconv/1.17:095512ed878f14a09dd732e9f6868729dd437529
     nlohmann_json/3.11.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
-    openssl/1.1.1h:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b
-    zlib/1.2.12:5a61a86bb3e07ce4262c80e1510f9c05e9b6d48b
+    openssl/1.1.1h:095512ed878f14a09dd732e9f6868729dd437529
+    zlib/1.2.12:095512ed878f14a09dd732e9f6868729dd437529
 
 [full_options]
+    boost:addr2line_location=/usr/bin/addr2line
     boost:asio_no_deprecated=False
     boost:buildid=None
     boost:bzip2=True
@@ -27,11 +30,12 @@
     boost:diagnostic_definitions=False
     boost:error_code_header_only=False
     boost:extra_b2_flags=None
+    boost:fPIC=True
     boost:filesystem_no_deprecated=False
     boost:filesystem_version=None
     boost:header_only=False
     boost:i18n_backend=deprecated
-    boost:i18n_backend_iconv=off
+    boost:i18n_backend_iconv=libiconv
     boost:i18n_backend_icu=False
     boost:layout=system
     boost:lzma=False
@@ -48,6 +52,7 @@
     boost:system_no_deprecated=False
     boost:system_use_utf8=False
     boost:visibility=hidden
+    boost:with_stacktrace_backtrace=True
     boost:without_atomic=False
     boost:without_chrono=False
     boost:without_container=False
@@ -82,11 +87,15 @@
     boost:zlib=True
     boost:zstd=False
     bzip2:build_executable=True
+    bzip2:fPIC=True
     bzip2:shared=False
+    libbacktrace:fPIC=True
+    libbacktrace:shared=False
+    libiconv:fPIC=True
+    libiconv:shared=False
     openssl:386=False
-    openssl:capieng_dialog=False
-    openssl:enable_capieng=False
     openssl:enable_weak_ssl_ciphers=False
+    openssl:fPIC=True
     openssl:no_aria=False
     openssl:no_asm=False
     openssl:no_async=False
@@ -140,6 +149,7 @@
     openssl:no_whirlpool=False
     openssl:openssldir=None
     openssl:shared=False
+    zlib:fPIC=True
     zlib:shared=False
 
 [recipe_hash]

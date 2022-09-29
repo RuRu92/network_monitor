@@ -1,5 +1,5 @@
-F:/workspace/c++/clion/network_monitor/build/CMakeFiles/network_monitor.dir
-F:/workspace/c++/clion/network_monitor/build/CMakeFiles/network-monitor-tests.dir
-F:/workspace/c++/clion/network_monitor/build/CMakeFiles/test.dir
-F:/workspace/c++/clion/network_monitor/build/CMakeFiles/edit_cache.dir
-F:/workspace/c++/clion/network_monitor/build/CMakeFiles/rebuild_cache.dir
+/Users/ruslanjonusas/workspace/network_monitor/build/CMakeFiles/network_monitor.dir
+/Users/ruslanjonusas/workspace/network_monitor/build/CMakeFiles/network-monitor-tests.dir
+/Users/ruslanjonusas/workspace/network_monitor/build/CMakeFiles/test.dir
+/Users/ruslanjonusas/workspace/network_monitor/build/CMakeFiles/edit_cache.dir
+/Users/ruslanjonusas/workspace/network_monitor/build/CMakeFiles/rebuild_cache.dir
