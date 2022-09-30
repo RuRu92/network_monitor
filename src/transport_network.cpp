@@ -39,13 +39,22 @@ NetworkMonitor::TransportNetwork::~TransportNetwork() = default;
 
 
 bool NetworkMonitor::TransportNetwork::AddStation(const Station &station) {
-    if (stations_[station.id] != nullptr) {
+    // Cannot add a station that is already in the network.
+    if (getStation(station.id) != nullptr) {
         return false;
-    };
+    }
 
+    // Create a new station node and add it to the map.
+    auto node{std::make_shared<StationNode>(StationNode{
+            station.id,
+            station.name,
+            0,// We start with no passengers.
+            {}// We start with no edges.
+    })};
 
+    stations_.emplace(station.id, std::move(node));
 
-    return false;
+    return true;
 };
 
 bool NetworkMonitor::TransportNetwork::AddLine(const Line &line) {
@@ -77,7 +86,7 @@ bool NetworkMonitor::TransportNetwork::AddLine(const Line &line) {
         auto rt{std::make_shared<RouteInternal>(RouteInternal{
                 .id{route.id},
                 .line{lineInternal},
-                .stops{stops}})};
+                .stops{std::move(stops)}})};
 
         for (size_t idx{0}; idx < rt->stops.size() - 1; ++idx) {
             auto currentStop = getStation(rt->stops[idx]->stationId);
@@ -91,7 +100,6 @@ bool NetworkMonitor::TransportNetwork::AddLine(const Line &line) {
 
         std::cout << "Adding internals full edges" << std::endl;
         routes.emplace(route.id, std::move(rt));
-        routes = {};
         return true;
     });
 
@@ -100,16 +108,6 @@ bool NetworkMonitor::TransportNetwork::AddLine(const Line &line) {
     return true;
 }
 
-bool NetworkMonitor::TransportNetwork::RecordPassengerEvent(const PassengerEvent &event) const {
-    auto station = getStation(event.stationId);
-    if (station == nullptr) {
-        return false;
-    }
-
-    station->passengerCount += 1;
-
-    return true;
-}
 
 long long int NetworkMonitor::TransportNetwork::GetPassengerCount(const Id &stationId) const {
     auto stationIt{stations_.find(stationId)};
@@ -183,9 +181,28 @@ SP<TransportNetwork::StationNode> NetworkMonitor::TransportNetwork::getStation(c
     }
     return stationIt->second;
 }
+bool NetworkMonitor::TransportNetwork::RecordPassengerEvent(const PassengerEvent &event) const {
+    // Find the station.
+    const auto stationNode{getStation(event.stationId)};
+    if (stationNode == nullptr) {
+        return false;
+    }
+
+    // Increase or decrease the passenger count at the station.
+    switch (event.type) {
+        case PassengerEvent::Type::In:
+            ++stationNode->passengerCount;
+            return true;
+        case PassengerEvent::Type::Out:
+            --stationNode->passengerCount;
+            return true;
+        default:
+            return false;
+    }
+}
+
 TransportNetwork &NetworkMonitor::TransportNetwork::operator=(TransportNetwork &&moved) = default;
 TransportNetwork &NetworkMonitor::TransportNetwork::operator=(const TransportNetwork &copied) = default;
-
 TransportNetwork::TransportNetwork(const TransportNetwork &copied) = default;
 NetworkMonitor::TransportNetwork::TransportNetwork(TransportNetwork &&moved) noexcept = default;
 

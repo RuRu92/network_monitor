@@ -140,8 +140,8 @@ namespace NetworkMonitor {
         // Internal route representation
         struct RouteInternal {
             Id id{};
-            std::shared_ptr<LineInternal> line{nullptr};
-            std::vector<SP<StationNode>> stops{};
+            Vec<SP<LineInternal>> line{nullptr};
+            Vec<SP<StationNode>> stops{};
         };
 
         // Internal line representation
